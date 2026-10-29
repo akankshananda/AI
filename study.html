@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamForge - AI Study Assistant</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ExamForge
+        </div>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="study.html">Study</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="writing.html">Writing</a>
+            <a href="chat.html">AI Chat</a>
+        </div>
+
+    </nav>
+
+    <main class="page-container">
+
+        <section class="page-header">
+
+            <h1>AI Study Assistant</h1>
+
+            <p>
+                Enter a topic and let AI create simple study notes.
+            </p>
+
+        </section>
+
+        <section class="form-card">
+
+            <label for="study-topic">
+                Academic Topic
+            </label>
+
+            <input
+                type="text"
+                id="study-topic"
+                placeholder="Example: Database Management System"
+            >
+
+            <label for="study-level">
+                Difficulty Level
+            </label>
+
+            <select id="study-level">
+
+                <option value="Beginner">
+                    Beginner
+                </option>
+
+                <option value="Intermediate">
+                    Intermediate
+                </option>
+
+                <option value="Advanced">
+                    Advanced
+                </option>
+
+            </select>
+
+            <button onclick="generateNotes()">
+                Generate AI Notes
+            </button>
+
+        </section>
+
+        <section class="result-card" id="notes-result">
+
+            <h2>Study Notes</h2>
+
+            <p>
+                Your AI-generated notes will appear here.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ExamForge | AI Academic Copilot</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

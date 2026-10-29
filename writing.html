@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamForge - Writing Assistant</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ExamForge
+        </div>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="study.html">Study</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="writing.html">Writing</a>
+            <a href="chat.html">AI Chat</a>
+        </div>
+
+    </nav>
+
+    <main class="page-container">
+
+        <div class="page-header">
+            <h1>AI Writing Assistant</h1>
+            <p>Improve and enhance your academic writing.</p>
+        </div>
+
+        <div class="form-card">
+
+            <label for="writing-text">
+                Enter Your Text
+            </label>
+
+            <textarea
+                id="writing-text"
+                placeholder="Enter or paste your text here..."
+            ></textarea>
+
+            <label for="writing-action">
+                Select Action
+            </label>
+
+            <select id="writing-action">
+                <option value="improve">
+                    Improve Writing
+                </option>
+
+                <option value="grammar">
+                    Correct Grammar
+                </option>
+
+                <option value="summarize">
+                    Summarize
+                </option>
+
+                <option value="formal">
+                    Make Formal
+                </option>
+
+                <option value="expand">
+                    Expand Text
+                </option>
+            </select>
+
+            <button onclick="processWriting()">
+                Process Text
+            </button>
+
+        </div>
+
+        <div class="result-card" id="writing-result">
+
+            <h2>Result</h2>
+
+            <p>
+                Your improved text will appear here.
+            </p>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ExamForge | AI Academic Copilot</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

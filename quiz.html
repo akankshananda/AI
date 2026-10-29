@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamForge - Quiz Generator</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ExamForge
+        </div>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="study.html">Study</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="writing.html">Writing</a>
+            <a href="chat.html">AI Chat</a>
+        </div>
+
+    </nav>
+
+    <main class="page-container">
+
+        <div class="page-header">
+            <h1>AI Quiz Generator</h1>
+            <p>Create quizzes and test your academic knowledge.</p>
+        </div>
+
+        <div class="form-card">
+
+            <label for="quiz-topic">Enter Topic</label>
+
+            <input
+                type="text"
+                id="quiz-topic"
+                placeholder="Example: Machine Learning"
+            >
+
+            <label for="question-count">Number of Questions</label>
+
+            <select id="question-count">
+                <option value="5">5 Questions</option>
+                <option value="10">10 Questions</option>
+                <option value="15">15 Questions</option>
+            </select>
+
+            <label for="quiz-difficulty">Difficulty</label>
+
+            <select id="quiz-difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button onclick="generateQuiz()">
+                Generate Quiz
+            </button>
+
+        </div>
+
+        <div class="quiz-container" id="quiz-result">
+
+            <h2>Your Quiz</h2>
+
+            <p>
+                Enter a topic and generate a quiz to begin.
+            </p>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ExamForge | AI Academic Copilot</p>
+    </footer>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
